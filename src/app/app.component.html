@@ -1,0 +1,106 @@
+<md-toolbar id="home" color="primary" class="md-medium-tall mat-elevation-z4" style="display: fixed; top: 0; left: 0; z-index: 100;">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between start" fxLayoutAlign.xs="space-between center" style="width: 100%">
+    <div>
+      <img src="assets/logo.png">
+    </div>
+    <md-nav-list fxLayoutWrap fxLayout="row" fxFlexAlign="center center" fxHide [fxHide.gt-sm]="false">
+      <md-list-item *ngFor="let link of links">
+        <a md-line href="#{{link}}">{{ link }}</a>
+        <!-- <button md-icon-button (click)="showInfo(link)">
+              <md-icon>info</md-icon>
+          </button> -->
+      </md-list-item>
+    </md-nav-list>
+  </div>
+</md-toolbar>
+<div>
+  <div id="recipes" style="height:500px">
+    <!-- Swiper -->
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background: #FFF url(assets/recipe-sinigang.jpg)  no-repeat right top;; background-size: cover;"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/food/1); background-size: cover;"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/food/2); background-size: cover;"></div>
+        <!-- <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/food/3); background-size: cover;"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/food/4); background-size: cover;"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/food/6); background-size: cover;"></div> -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> --> 
+    </swiper>
+  </div> 
+  <div id="products">
+    <h1 class="ml-1" style="color: #990000; text-align: center;">Products</h1>
+    <div fxLayoutWrap fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center" style="width: 100%">
+
+      <md-card class="example-card" style="background-color: #2c8323;">
+        <md-card-header>
+          <div md-card-avatar class="chili-garlic-header-image"></div>
+          <md-card-title>Chili Garlic Oil</md-card-title>
+          <md-card-subtitle>Cesarios</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="assets/chili-garlic.jpg">
+        <md-card-content>
+          <p>Notorius for beiung the founder's favorite, the original Chili Garlic Oil was Cesario's very first product.
+          </p>
+          <p>Widely popular for being the perfect blend of garlicky goodness and level of spice, the Chili Garlic Oil is your
+            all-around condiment that will make you look forward to every meal.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button>LIKE</button>
+          <button md-button>SHARE</button>
+          <button md-button>REVIEW</button>
+        </md-card-actions>
+      </md-card>
+
+      <md-card class="example-card" style="background-color: #cc0000;">
+        <md-card-header>
+          <div md-card-avatar class="chili-header-image"></div>
+          <md-card-title>Extra Chili Oil</md-card-title>
+          <md-card-subtitle>Cesarios</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="assets/chili.jpg">
+        <md-card-content>
+          <p>Notorius for beiung the founder's favorite, the original Chili Garlic Oil was Cesario's very first product.
+          </p>
+          <p>Widely popular for being the perfect blend of garlicky goodness and level of spice, the Chili Garlic Oil is your
+            all-around condiment that will make you look forward to every meal.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button>LIKE</button>
+          <button md-button>SHARE</button> 
+          <button md-button>REVIEW</button>
+        </md-card-actions>
+      </md-card>
+
+      <md-card class="example-card" style="background-color: #f09813;">
+        <md-card-header>
+          <div md-card-avatar class="garlic-header-image"></div>
+          <md-card-title>Garlic Bits</md-card-title>
+          <md-card-subtitle>Cesarios</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="assets/garlic.jpg">
+        <md-card-content>
+          <p>Notorius for beiung the founder's favorite, the original Chili Garlic Oil was Cesario's very first product.
+          </p>
+          <p>Widely popular for being the perfect blend of garlicky goodness and level of spice, the Chili Garlic Oil is your
+            all-around condiment that will make you look forward to every meal.
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button>LIKE</button>
+          <button md-button>SHARE</button>
+          <button md-button>REVIEW</button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+  <!-- <div id="purchasing" style="height:500px">
+    <h1>Purchasing</h1>
+  </div> -->
+</div>

@@ -1,0 +1,33 @@
+
+
+.example-sidenav-content {
+display: flex;
+height: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.example-sidenav {
+padding: 20px;
+}
+
+.example-card {
+    width: auto;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+  
+.chili-garlic-header-image {
+    background-image: url('../assets/chili-garlic.jpg');
+    background-size: cover;
+}
+
+.chili-header-image {
+    background-image: url('../assets/chili.jpg');
+    background-size: cover;
+}
+
+.garlic-header-image {
+    background-image: url('../assets/garlic.jpg');
+    background-size: cover;
+}

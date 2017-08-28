@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";  */
+/* @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";   */
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import "~@angular/material/prebuilt-themes/purple-green.css"; 
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    /* background-image:url(assets/recipe-sinigang.jpg); background-size: cover; */
+    color: #333;
+  }
+
+md-toolbar-row {
+    justify-content: space-between;
+    height: 100% !important;
+    padding: 20px;
+}
+  
+
+.mat-toolbar-row {
+    height: 164px;
+}
+
+swiper{
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
